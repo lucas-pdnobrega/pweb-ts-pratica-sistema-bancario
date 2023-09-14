@@ -1,5 +1,5 @@
 class Cliente {
-    constructor(nome, cpf, conta) {
+    constructor(nome, cpf, conta = undefined) {
         this._nome = nome;
         this._cpf = cpf;
         this._conta = conta;

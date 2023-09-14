@@ -12,8 +12,6 @@ class ClienteController {
             <HTMLInputElement>document.querySelector("#nome")
         this.inputCPF =
             <HTMLInputElement>document.querySelector("#cpf");
-        this.inputConta =
-            <HTMLInputElement>document.querySelector("#conta");
         this.clientes = new Clientes();
         this.contas = new Contas();
     }
@@ -22,8 +20,7 @@ class ClienteController {
         evento.preventDefault();
         let novoCliente = new Cliente(
             this.inputNome.value,
-            parseInt(this.inputCPF.value), 
-            this.contas.pesquisar(this.inputConta.value)
+            parseInt(this.inputCPF.value)
             );
 
         this.clientes.inserir(novoCliente);

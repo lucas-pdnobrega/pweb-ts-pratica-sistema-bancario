@@ -4,7 +4,7 @@ class Cliente {
     private _cpf:number;
     private _conta:Conta;
 
-    constructor(nome:string, cpf:number, conta:Conta) {
+    constructor(nome:string, cpf:number, conta:Conta=undefined) {
         this._nome = nome;
         this._cpf = cpf;
         this._conta = conta;

@@ -1,6 +1,5 @@
 let contaController = new ContaController();
 let clienteController = new ClienteController();
-contaController.listar();
 const c1 = new Conta('1', 100);
 const p1 = new Poupanca('2', 100);
 const cb1 = new ContaBonificada('3', 0);
