@@ -1,4 +1,5 @@
 let contaController = new ContaController();
+let clienteController = new ClienteController();
 contaController.listar();
 const c1 = new Conta('1', 100);
 const p1 = new Poupanca('2', 100);
