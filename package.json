@@ -1,0 +1,24 @@
+{
+  "name": "banco-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc",
+    "start": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gugawag/banco-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gugawag/banco-node/issues"
+  },
+  "homepage": "https://github.com/gugawag/banco-node#readme",
+  "dependencies": {
+    "typescript": "^3.8.3"
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1 class="text-center">Contas Bancárias</h1>
+
+<div id="mensagemView"></div>
+
+<form class="form">
+
+    <div class="form-group">
+        <label for="data">Data de Criação</label>
+        <input type="date" id="data" class="form-control" required autofocus/>
+    </div>
+
+    <div class="form-group">
+        <label for="conta">Conta</label>
+        <input type="text" min="1" step="1" id="conta" class="form-control" value="1" required/>
+    </div>
+
+    <div class="form-group">
+        <label for="saldo">Saldo</label>
+        <input id="saldo" type="number" class="form-control" min="0.01" step="0.01" value="0.0" required/>
+    </div>
+
+    <button class="btn btn-primary" type="submit" onclick="contaController.inserir(event)">Inserir</button>
+</form>
+
+<br>
+<br>
+
+<table>
+    <thead>
+    <tr>
+        <th>DATA DE CRIAÇÃO</th>
+        <th>CONTA</th>
+        <th>SALDO</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    </tbody>
+
+    <tfoot>
+    </tfoot>
+</table>
+
+<script src="js/model/conta.js"></script>
+<script src="js/model/conta-bonificada.js"></script>
+<script src="js/model/poupanca.js"></script>
+<script src="js/model/contas.js"></script>
+<script src="js/controller/conta-controller.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
