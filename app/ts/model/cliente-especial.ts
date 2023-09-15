@@ -7,30 +7,6 @@ class ClienteEspecial extends Cliente {
         this._dependentes = [];
     }
 
-    get nome(): string {
-        return super.nome;
-    }
-
-    set nome(nome:string) {
-        super.nome = nome;
-    }
-
-    get cpf(): number {
-        return super.cpf;
-    }
-
-    set cpf(cpf:number) {
-        super.cpf = cpf;
-    }
-
-    get conta(): Conta {
-        return super.conta;
-    }
-
-    set conta(conta:Conta) {
-        super.conta = conta;
-    }
-
     get dependentes(): Array<Cliente> {
         return this._dependentes;
     }
